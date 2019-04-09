@@ -33,13 +33,13 @@ Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é 
 
 
 
-## 📋 Requirements
+## 📋 Requirements : ...
 
 Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! 
 
 
 
-## 🎉 Building your first React Native app
+## 🎉 Contruindo alguns jogos
 
 Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! Este é um texto longo! 
 
