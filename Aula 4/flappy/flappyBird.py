@@ -108,7 +108,7 @@ font = pygame.font.SysFont(df, 40)
 
 bg, _ = load_image("bin/background.png")
 duck, _ = load_image("bin/duck2.png", True)
-# scale the duck so its height is half the height of the gap
+# cale the duck so its height is half the height of the gap
 # find the scaling ratio
 prop = TUBE_GAP//2 / duck.get_height()
 duck = pygame.transform.scale(duck,
@@ -160,15 +160,20 @@ while playing:
             draw_tube(screen, tubes[i])
             if duck.collision_rect.collidelist(tubes[i]) > -1:
                 playing = False
-            """JUNTAR PONTOS"""
+            elif duck.pos.left >= tubes[i][0].right:
+                score += 1 
+
             i += 1
-
     duck.update_position()
-    """VER SE O PATO VOOU PARA O ALTO OU PARA BAIXO DO CHAO"""
+
+    # VER SE O PATO VOOU PARA O ALTO OU PARA BAIXO DO CHAO"""
+    if duck.pos.bottom >= HEIGHT:
+        playing = False
+    elif duck.pos.top <= 0:
+        duck.pos.top = 0
+
     duck.update()
-
     draw_score(score)
-
     pygame.display.update()
 
 # we lost
@@ -176,6 +181,7 @@ screen.fill((0,0,0))
 s = font.render("You lost with {} points!".format(score), True, (237, 205, 99))
 screen.blit(s, (WIDTH//2 - s.get_width()//2, HEIGHT//2 - s.get_height()//2))
 pygame.display.update()
+
 while True:
     for ev in pygame.event.get():
         if ev.type == QUIT:
